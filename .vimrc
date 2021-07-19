@@ -1,4 +1,7 @@
 "| Use at your own risk...
+"
+" - `:source %` to see your changes.
+" - `:PlugInstall`
 
 " Enable basic syntax highlighting.
 syntax on
@@ -21,4 +24,19 @@ set undofile
 
 " Search & Destroy
 set incsearch
+
+" Plug
+call plug#begin('~/.vim/plugged')
+
+" Code-completion
+" Don't forget to go to `~/.vim/plugged/YouCompleteMe` and `./install.py`.
+Plug 'git@github.com:ycm-core/YouCompleteMe.git'
+
+" Color scheme
+Plug 'junegunn/seoul256.vim'
+
+call plug#end()
+
+colorscheme seoul256
+set background=dark
 
