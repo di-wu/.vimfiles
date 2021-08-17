@@ -35,6 +35,11 @@ Plug 'git@github.com:ycm-core/YouCompleteMe.git'
 " Color scheme
 Plug 'junegunn/seoul256.vim'
 
+" Go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" Rust
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
 
 colorscheme seoul256
